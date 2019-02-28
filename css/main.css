@@ -1,0 +1,192 @@
+/*header*/
+*{
+	scroll-behavior: smooth;
+}
+header{
+	background-color:#ffffff00;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	transition:top 0.3s;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 9999999;
+	transition: 0.4s ease-out;
+}
+
+header .lol {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+header .lol h1 {
+	float: left;
+	font-size: 28px;
+	font-family: sans-serif;
+	line-height: 40px;
+	margin: 0;
+	transition: font-size ease .4s;
+}
+
+header .lol a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header .lol nav {
+	font-size:20px;
+	font-family: Arial;
+	line-height: 40px;
+	float: right;
+	transition: font-size ease .4s;
+}
+
+.logo {
+	background-color: white;
+	width: 150px;
+}
+.logo img {
+	width: 100%;
+}
+
+header .lol nav a{
+	margin: 50px 0 0 20px;
+	display: inline-block;
+	padding: 0 10px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-family: 'K2D', sans-serif;
+}
+
+header .lol nav a:hover{
+	opacity: 1;
+}
+body.fixed header {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+body.fixed header .lol h1 {
+	font-size: 30px;
+	line-height: 30px;
+}
+
+body.fixed header .lol nav {
+	line-height: 28px;
+	font-size: 21px;
+}
+/*code pen https://codepen.io/elwinvdhazel/pen/VzwzWK*/
+a {
+  display: block;
+  margin: auto;
+  padding: 1rem 1.25rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow: -2px 4px 4px red, 0 0 10px red, inset 1px 1px 1px white;
+  color: red;
+  border: 2px solid;
+  border-color: red;
+  border-radius: 4px;
+  background-color: transparent;
+  font-family: "K2D"
+}
+
+.overlay {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100vh;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+/*first layer*/
+.one{
+	background-image: url('../img/1.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 112vh;
+	position: relative;
+	z-index: 2;
+}
+.one-one{
+	position: absolute;
+	top: 35%;
+	left: 43%;
+}
+h2{
+	font-size: 50px !important;
+	border-bottom: 3px;
+	font-family: "K2D"
+}
+ul{
+	text-decoration: none;
+	list-style-type: none;
+	padding: 50px 0;
+}
+li{
+	margin-left:40px;
+	font-family: "Roboto-Slab"
+}
+.calender{
+	margin-top: 5%;
+	font-size: 20px !important;
+}
+/*second layer*/
+.two{
+	background-color: #fff;
+}
+.three{
+	background-color: #fdfe88;
+	padding: 20px;
+}
+@media all and (max-width: 768px) {
+	header {
+		padding: 20px 0;
+		height: 75px;
+		position: fixed;
+	}
+
+	header .lol h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	header .lol nav {
+		line-height: 1;
+		float:none;
+	}
+
+	header .lol nav a {
+		font-size: 23px;
+	}
+
+	body.fixed header {
+		display: none;
+	}
+}
+@media all and (max-width: 1060px) {
+
+	.one{
+		background-size: cover !important;
+	}
+}
